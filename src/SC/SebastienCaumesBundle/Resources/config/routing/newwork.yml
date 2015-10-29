@@ -1,0 +1,30 @@
+newwork:
+    path:     /
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:index" }
+
+newwork_show:
+    path:     /{id}/show
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:show" }
+
+newwork_new:
+    path:     /new
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:new" }
+
+newwork_create:
+    path:     /create
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:create" }
+    methods:  POST
+
+newwork_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:edit" }
+
+newwork_update:
+    path:     /{id}/update
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:update" }
+    methods:  [POST, PUT]
+
+newwork_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SCSebastienCaumesBundle:NewWork:delete" }
+    methods:  [POST, DELETE]

@@ -1,0 +1,3 @@
+sc_sebastien_caumes:
+    resource: "@SCSebastienCaumesBundle/Resources/config/routing.yml"
+    prefix:   /

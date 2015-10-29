@@ -1,0 +1,4 @@
+services:
+#    sc_sebastien_caumes.example:
+#        class: SC\SebastienCaumesBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,17 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="{{ _charset }}" />
+        <title>Erreur détectée: {{ status_text }}</title>
+    </head>
+    <body>
+    <h1>Oops! une erreur est survenue</h1>
+    <img src="{{ asset('bundles/scsebastiencaumes/images/404.jpg') }}">
+    <h2>Le serveur retourne un beau "{{ status_code }} {{ status_text }}".</h2>
+
+    <div>
+        L'adresse de la page demandée ne semble pas exister, vérifier celle-ci ou
+        <a href="{{ path('sc_sebastien_caumes_homepage') }}">retournez en page d'accueil</a>.
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,55 @@
+{% extends '::base.html.twig' %}
+{% from 'SCSebastienCaumesBundle:macros:macros.html.twig' import back %}
+{% block body %}
+<div class="row">
+
+        <div class="col-md-12">
+            {{ back('sc_sebastien_caumes_homepage') }}
+        </div>
+
+
+
+    <div class="col-md-12">
+
+    <div class="text-center">
+        <h1>Mes Applications</h1>
+    </div>
+
+
+
+
+
+        {% for entity in entities %}
+            <div class="col-md-12 fond-article m-b-lg">
+
+
+            <div class="row">
+
+
+                    <div class="col-md-12  fond-article-titre">
+                    <h2>{{ entity.title }}</h2>
+                    {% if entity.date %}{{ entity.date|date('d-M-Y') }}{% endif %}
+                    </div>
+                    <div class="col-md-12 ">
+                    <img src="{{ entity.image|raw }}" width="100">
+
+
+                    </div>
+                    <div class="col-md-12">
+                        {{ entity.description|raw }}
+                    </div>
+
+
+            </div>
+
+
+            </div>
+
+
+
+        {% endfor %}
+
+
+    </div>
+</div>
+{% endblock %}

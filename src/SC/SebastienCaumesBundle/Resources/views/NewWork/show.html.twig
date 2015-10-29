@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div class="row">
+        <div class="col-md-6">
+            <h1>NewWork</h1>
+
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <th>Titre</th>
+                    <td><img src="{{ entity.image|raw }}" width="50"> {{ entity.title }}</td>
+                </tr>
+
+                <tr>
+                <tr>
+                    <th>Description</th>
+                    <td>{{ entity.description }}</td>
+                </tr>
+
+                    <th>Date</th>
+                    <td>{{ entity.date|date('d M Y') }} à {{ entity.date|date('H:i') }}</td>
+                </tr>
+                <tr>
+                    <th>Auteur</th>
+                    <td>{{ entity.author }}</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="{{ path('newwork') }}">
+                        <button type="button" class="btn btn-info">Retour liste</button>
+                    </a>
+                    <a href="{{ path('newwork_edit', { 'id': entity.id }) }}">
+                        <button type="button" class="btn btn-danger">Editer</button>
+                    </a>
+                    <div class="col-md-2 pull-right">{{ form(delete_form) }}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

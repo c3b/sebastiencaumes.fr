@@ -1,0 +1,37 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <h1>Envoi de projet</h1>
+            </div>
+            {{ form(form) }}
+        </div>
+        <div class="col-md-4">
+            <h1>Editionde projet</h1>
+            {% for work in works %}
+                {{ work.id }}
+                {{ work.title }}
+                {{ work.description }}
+                {{ work.image }}
+                {{ work.date|date('d/M/Y') }}
+                {{ work.author }}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+    <div class="text-center footer">
+        Administration - connecté en tant qu' <strong>{{app.user('name') }}</strong>
+    </div>
+
+{% endblock %}
+
+

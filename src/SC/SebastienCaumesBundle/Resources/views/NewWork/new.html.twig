@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+
+    <h1>Creer un projet</h1>
+
+    {{ form(form) }}
+    <a href="{{ path('newwork') }}">
+        <button type="button" class="btn btn-info">
+            Retour liste
+        </button>
+     </a>
+
+{% endblock %}

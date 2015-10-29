@@ -1,0 +1,35 @@
+{% extends'SCSebastienCaumesBundle::layout.html.twig' %}
+
+{% block portfolio %}
+    {% for flashMessage in app.session.flashbag.get('monmessage') %}
+        <div class="flash-notice">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
+    <h1 class="m-t-lg m-b-md">Mes dernières applications</h1>
+
+    {% for entity in entities %}
+        <a href="{{ path('sc_sebastien_caumes_entity_detail', {'id': entity.id }) }}" class="text-info">
+            <div class="col-md-6 ctr hover-c" >
+
+                <div class="col-md-12 fond-article-titre ">
+                    <h2>{{ entity.title }}</h2> <h3>{% if entity.date %}{{ entity.date|date('d/M/Y') }}{% endif %}</h3>
+                </div>
+
+                <div class="fond-article main-articles col-md-12">
+                    <div>
+                        <figure class="figure text-center"><img class="imageindex" src="{{ entity.image }}" width="128" height="128" /></figure>
+                    </div>
+                    <div class=" col-md-12 shortdescription">
+                        <p></p>{{ entity.description|slice(0,80)|raw }}{{ '[...]' }}</p>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+
+     {% endfor %}
+
+
+{% endblock %}

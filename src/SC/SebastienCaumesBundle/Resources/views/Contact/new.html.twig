@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    {% for flashMessage in app.session.flashbag.get('sendmail') %}
+        <div class="flash-notice center-block text-info">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+            {{ form(form) }}
+        </div>
+    </div>
+
+
+{% endblock %}

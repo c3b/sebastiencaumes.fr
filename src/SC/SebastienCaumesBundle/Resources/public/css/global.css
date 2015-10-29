@@ -1,0 +1,439 @@
+.btn-info,
+.btn-info-outline {
+    color: #b0bec5;
+    border-color: #b0bec5;
+}
+.btn-info:hover,
+.btn-info-outline:hover {
+    color: #b0bec5;
+    border-color: #b0bec5;
+    background-color: #ff5252;
+}
+.anim-social:hover {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    transform: rotate(8deg);
+}
+a:focus,
+a:hover {
+    color: #b0bec5;
+    text-decoration: none;
+}
+p,
+div,
+ul.li,
+a {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
+p,
+div {
+    color: rgba(0, 0, 0, 0.54);
+}
+hr {
+    color: rgba(0, 0, 0, 0.12);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Contrail One', cursive;
+    color: rgba(0, 0, 0, 0.87);
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    outline: none;
+    z-index: 2000;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    z-index: 2000;
+}
+.btn-circle.btn-xl {
+    width: 60px;
+    height: 60px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    outline: none;
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    z-index: 2000;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -webkit-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -o-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+}
+.btn-circle.btn-xl:active {
+    outline: none;
+}
+.header {
+    background-color: #607d8b;
+    -moz-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -webkit-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -o-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+}
+.footer {
+    background-color: #607d8b;
+    height: 90px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.list-group-item-custom {
+    border: none;
+    background-color: #ff5252;
+    font-size: 1.1em;
+    line-height: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px 6px;
+}
+.popover {
+    background: #ff5252;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.popover-content {
+    font-family: 'Lato', sans-serif;
+    padding: 10px 6px;
+    background-color: #ff5252;
+}
+.popover-title {
+    display: none;
+}
+.popover-arrow {
+    display: none;
+}
+/*.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}*/
+/* Opacity Over */
+.hover-c {
+    opacity: 1;
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+.hover-c:hover {
+    opacity: 0.6;
+}
+.ctr {
+    min-width: 320px;
+    margin-bottom: 40px ;
+}
+.fond-article {
+    background-color: #fff;
+    border: 4px dashed #b0bec5;
+    -moz-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -webkit-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -o-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+}
+.navbar-fixed-top {
+    height: 60px;
+}
+body {
+    padding-top: 180px;
+}
+.social {
+    margin-left: 260px;
+    margin-top: 5px;
+}
+.bandoh {
+    left: 5px;
+    top: 10px;
+    position: fixed;
+}
+.main-articles {
+    margin: 0 auto;
+    min-height: 350px;
+}
+.btn-menu {
+    background-color: #ff5252;
+}
+.fond-article-titre {
+    background-color: #607d8b;
+    margin-bottom: 10px;
+    -moz-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -webkit-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    -o-box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+    box-shadow: 6px 6px 5px rgba(101, 101, 101, 0.6);
+}
+figure {
+    margin: 15px;
+}
+/******* BAR CHART ********/
+/* Mixings &  Variables */
+.clearfix,
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+    zoom: 1;
+}
+/* Resets */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #EDF2F6;
+    color: #444;
+}
+/* Bar Graph Class */
+.barGraph {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.graph {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    left: 0%;
+}
+.graph-barBack {
+    border-radius: 2px;
+    background: #DAE4EB;
+    margin-bottom: 10px;
+    display: block;
+}
+.graph-bar {
+    background-color: #ff5252;    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 800;
+    display: block;
+    height: 30px;
+    width: 0%;
+}
+.graph-bar:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #ff8a80;
+}
+.graph-bar:last-child {
+    margin-bottom: 0;
+}
+.graph-bar:after {
+    position: absolute;
+    content: attr(data-value);
+    display: none;
+    font-size: 12px;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 10px;
+    margin-left: 5px;
+    left: 100%;
+    top: 0;
+}
+.graph-bar:hover:after {
+    display: block;
+}
+.graph-legend {
+    position: absolute;
+    margin-right: 0px;
+    left: 5px ;
+    z-index: 800;
+}
+/* Bubble Chart */
+.chart {
+    border-radius: 3px;
+    border: 2px solid rgba(113, 125, 149, 0.45);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+.chart-bubble {
+    overflow: hidden;
+    background-color: #607d8b;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    position: absolute;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    min-height: 10px;
+    min-width: 10px;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+}
+.chart-bubble:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #428D92;
+}
+.chart-bubble:after {
+    position: absolute;
+    content: attr(data-label);
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 50%;
+    line-height: 1px;
+    font-size: 15px;
+    color: #fff;
+}
+.chart-bubble:hover:after {
+    display: block;
+}
+/* Lines for Charts */
+.lines {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+.lines-horz {
+    border-bottom: 1px dashed rgba(113, 125, 149, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 0px;
+}
+.lines-horz:nth-of-type(1) {
+    top: 20%;
+}
+.lines-horz:nth-of-type(2) {
+    top: 40%;
+}
+.lines-horz:nth-of-type(3) {
+    top: 60%;
+}
+.lines-horz:nth-of-type(4) {
+    top: 80%;
+}
+.lines-vert {
+    border-right: 1px dashed rgba(113, 125, 149, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 1px;
+}
+.lines-vert:nth-of-type(5) {
+    left: 20%;
+}
+.lines-vert:nth-of-type(6) {
+    left: 40%;
+}
+.lines-vert:nth-of-type(7) {
+    left: 60%;
+}
+.lines-vert:nth-of-type(8) {
+    left: 80%;
+}
+/* Line Graph */
+.lineChart {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-radius: 3px;
+    border: 2px solid rgba(113, 125, 149, 0.45);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+.lineChart svg {
+    position: absolute;
+    z-index: 600;
+}
+.lineChart circle {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    stroke: #607d8b;
+    stroke-width: 3;
+    fill: #607d8b;
+}
+.lineChart circle:hover {
+    stroke-width: 8;
+}
+.lineChart line {
+    stroke: #717d95;
+    stroke-width: 4;
+}
+.trend line {
+    stroke: rgba(204, 51, 51, 0.8);
+}
+/*************END BAT CHART ************/
+/****media queries *****/
+@media only screen and (max-device-width: 968px) {
+    .bandoh {
+        left: 5px;
+    }
+    .btn-circle.btn-xl {
+        width: 40px;
+        height: 40px;
+        padding: 0px 0px;
+        font-size: 24px;
+        line-height: 1.33;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        outline: none;
+        position: fixed;
+        right: 25px;
+        top: 10px;
+        z-index: 2000;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+    }
+    .social {
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+    body {
+        padding-top: 120px;
+    }
+}

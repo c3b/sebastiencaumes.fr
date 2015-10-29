@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+{% from 'SCSebastienCaumesBundle:macros:macros.html.twig' import back %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4">
+
+
+                    <h1>{{ title }}</h1>
+                    <div><img src="{{ image }}" width="256" height="256"></div>
+
+                    <strong>{{ author }}</strong>
+                    <i>{{ date|date('d/M/Y') }}</i>
+
+
+            </div>
+            <div class="col-md-8">
+                {{ back('sc_sebastien_caumes_homepage') }}
+                {{ description | raw }}
+
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

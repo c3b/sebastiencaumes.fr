@@ -1,0 +1,24 @@
+sc_sebastien_caumes_newwork:
+    resource: "@SCSebastienCaumesBundle/Resources/config/routing/newwork.yml"
+    prefix:   /newwork
+
+sc_sebastien_caumes_homepage:
+    path:     /
+    defaults: { _controller: SCSebastienCaumesBundle:Work:index }
+
+sc_sebastien_caumes_entity_detail:
+    path:     /work/{id}
+    defaults: { _controller: SCSebastienCaumesBundle:Work:detail }
+    requirements:
+        id: \d+
+
+sc_sebastien_caumes_applications:
+    path:   /applications
+    defaults: { _controller: SCSebastienCaumesBundle:Work:showAll }
+
+sc_sebastien_caumes_contact:
+    path:   /contact
+    defaults: { _controller: SCSebastienCaumesBundle:Contact:index }
+
+logout:
+    path: /logout
