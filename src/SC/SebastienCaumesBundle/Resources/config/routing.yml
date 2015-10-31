@@ -1,16 +1,15 @@
 sc_sebastien_caumes_newwork:
     resource: "@SCSebastienCaumesBundle/Resources/config/routing/newwork.yml"
-    prefix:   /newwork
+    prefix:   /admin
 
 sc_sebastien_caumes_homepage:
     path:     /
     defaults: { _controller: SCSebastienCaumesBundle:Work:index }
 
 sc_sebastien_caumes_entity_detail:
-    path:     /work/{id}
+    path:     /application/{slug}
     defaults: { _controller: SCSebastienCaumesBundle:Work:detail }
-    requirements:
-        id: \d+
+
 
 sc_sebastien_caumes_applications:
     path:   /applications
