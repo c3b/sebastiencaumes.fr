@@ -11,7 +11,7 @@ $( function () {
         $(this).css("width", dataWidth + "%");
     });
 
-    if ($(document).width() > 968){
+    if ($(document).width() > 768){
         $('#social-haut').attr({style:'visibility:visible'});
     }
 
