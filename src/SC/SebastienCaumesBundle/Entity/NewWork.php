@@ -3,6 +3,7 @@
 namespace SC\SebastienCaumesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * NewWork
@@ -29,9 +30,16 @@ class NewWork
     private $title;
 
     /**
+     * @Gedmo\Slug(fields={"title"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    private $slug;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="description", type="text")
+     *
      */
     private $description;
 
@@ -189,5 +197,29 @@ class NewWork
     public function getAuthor()
     {
         return $this->author;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return NewWork
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 }
