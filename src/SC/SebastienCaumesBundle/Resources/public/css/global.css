@@ -4,7 +4,11 @@
     border-color: #b0bec5;
 }
 .btn-info:hover,
-.btn-info-outline:hover {
+.btn-info:focus,
+.btn-info:active,
+.btn-info-outline:hover,
+.btn-info-outline:focus,
+.btn-info-outline:active {
     color: #b0bec5;
     border-color: #b0bec5;
     background-color: #ff5252;
@@ -29,6 +33,14 @@ a {
     color: rgba(0, 0, 0, 0.54);
     text-decoration: none;
 }
+
+.bottom-link a{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
 p,
 div {
     color: rgba(0, 0, 0, 0.54);
@@ -44,7 +56,25 @@ h5,
 h6 {
     font-family: 'Contrail One', cursive;
     color: rgba(0, 0, 0, 0.87);
+
 }
+
+a:hover, a:active, a:focus{
+    outline: none;
+}
+
+.sebastien:hover{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.tags-txt{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -94,10 +124,12 @@ h6 {
 }
 .footer {
     background-color: #607d8b;
-    height: 90px;
+    height: 150px;
     padding-top: 10px;
     margin-top: 50px;
 }
+
+
 .list-group-item-custom {
     border: none;
     background-color: #ff5252;
@@ -158,7 +190,7 @@ body {
     padding-top: 180px;
 }
 .social {
-    margin-left: 260px;
+    margin-left: 290px;
     margin-top: 5px;
 }
 .bandoh {
@@ -406,7 +438,7 @@ body {
 }
 /*************END BAT CHART ************/
 /****media queries *****/
-@media only screen and (max-device-width: 968px) {
+@media only screen and (max-device-width: 768px) {
     .bandoh {
         left: 5px;
     }
@@ -429,11 +461,13 @@ body {
         -o-box-shadow: none;
         box-shadow: none;
     }
-    .social {
-        margin-left: 120px;
-        margin-top: 10px;
-    }
+
     body {
         padding-top: 120px;
+    }
+
+    .center-small{
+        text-align: center;
+        margin-top: 10px;
     }
 }
