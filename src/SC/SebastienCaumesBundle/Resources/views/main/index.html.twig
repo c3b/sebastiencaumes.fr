@@ -10,7 +10,7 @@
     <h1 class="m-t-lg m-b-md">Mes dernières applications</h1>
 
     {% for entity in entities %}
-        <a href="{{ path('sc_sebastien_caumes_entity_detail', {'id': entity.id }) }}" class="text-info">
+        <a href="{{ path('sc_sebastien_caumes_entity_detail', {'slug': entity.slug} ) }}" class="text-info">
             <div class="col-md-6 ctr hover-c" >
 
                 <div class="col-md-12 fond-article-titre ">
