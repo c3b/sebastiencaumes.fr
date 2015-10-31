@@ -17,6 +17,7 @@ class WorkController extends Controller
         $repo= $this->getDoctrine()->getRepository('SCSebastienCaumesBundle:NewWork');
         $query = $repo->createQueryBuilder('n')
             ->orderBy('n.date', 'DESC')
+            ->setMaxResults(4)
             ->getQuery();
 
         $entities = $query->getResult();
@@ -24,18 +25,20 @@ class WorkController extends Controller
         return $this->render('SCSebastienCaumesBundle:main:index.html.twig', array('entities' => $entities));
     }
 
-    public function detailAction($id){
+    public function detailAction($slug){
         $repo= $this->getDoctrine()->getRepository('SCSebastienCaumesBundle:NewWork');
 
-        $work = $repo->find($id);
+        $work = $repo->findOneBy(array('slug' => $slug));
 
         $title = $work->getTitle();
         $image = $work->getImage();
         $description = $work->getDescription();
         $author = $work->getAuthor();
         $date = $work->getDate();
+        $slug = $work->getSlug();
 
-        return $this->render('SCSebastienCaumesBundle:work:detail.html.twig', array('id' => $id,
+
+        return $this->render('SCSebastienCaumesBundle:work:detail.html.twig', array('slug' => $slug,
             'title' => $title, 'image' => $image, 'description' => $description, 'author' => $author, 'date' => $date));
     }
 
