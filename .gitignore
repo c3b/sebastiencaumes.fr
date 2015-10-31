@@ -9,3 +9,4 @@
 /composer.phar
 /vendor/
 /web/bundles/
+/src/SC/SebastienCaumesBundle/Resources/public/ckeditor
